@@ -25,11 +25,13 @@
   <parent>
     <groupId>org.jspringbot</groupId>
     <artifactId>jspringbot-libraries</artifactId>
-    <version>1.6-SNAPSHOT</version>
+    <version>1.9</version>
   </parent>
 
   <artifactId>jspringbot-function-generator</artifactId>
   <name>jspringbot-function-generator</name>
+  <version>1.10-SNAPSHOT</version>
+  <description>JSpringBot Function Generator</description>
 
   <licenses>
     <license>
@@ -40,21 +42,11 @@
     </license>
   </licenses>
 
-  <distributionManagement>
-    <repository>
-      <id>sonatype-nexus-staging</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-    <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <scm>
     <connection>scm:git:https://github.com/jspringbot/jspringbot-function-generator.git</connection>
     <url>scm:git:https://github.com/jspringbot/jspringbot-function-generator.git</url>
     <developerConnection>scm:git:https://github.com/jspringbot/jspringbot-function-generator.git</developerConnection>
+    <tag>HEAD</tag>
   </scm>
 
   <developers>
@@ -89,18 +81,22 @@
     <dependency>
       <groupId>org.jspringbot</groupId>
       <artifactId>jspringbot-expression</artifactId>
+      <version>${jspringbot.version}</version>
     </dependency>
     <dependency>
       <groupId>org.jspringbot</groupId>
       <artifactId>jspringbot-date</artifactId>
+      <version>${jspringbot.version}</version>
     </dependency>
     <dependency>
       <groupId>org.jspringbot</groupId>
       <artifactId>jspringbot-json</artifactId>
+      <version>${jspringbot.version}</version>
     </dependency>
     <dependency>
       <groupId>org.jspringbot</groupId>
       <artifactId>jspringbot-xml</artifactId>
+      <version>${jspringbot.version}</version>
     </dependency>
 
     <dependency>
